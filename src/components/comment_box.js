@@ -16,9 +16,8 @@ export default class CommentBox extends Component {
     return (
       <div className='comment-box'>
         <textarea
-          value={this.sate.comment}
-          onChange={this.HandleChange.bind(this)}
-        />
+          value={this.state.comment}
+          onChange={this.handleChange.bind(this)} />
         <button>Submit Content</button>
       </div>
     );
