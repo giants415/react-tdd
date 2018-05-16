@@ -14,12 +14,12 @@ export default class CommentBox extends Component {
 
   render() {
     return (
-      <div className='comment-box'>
+      <form className='comment-box'>
         <textarea
           value={this.state.comment}
           onChange={this.handleChange.bind(this)} />
         <button>Submit Content</button>
-      </div>
+      </form>
     );
   }
 }
