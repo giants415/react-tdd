@@ -22,7 +22,7 @@ describe('CommentBox', () => {
 
 
   describe('entering some text', () => {
-    it('shows text that is entered', () => {
+    it('shows text that is entered in the text area', () => {
 
     });
 
