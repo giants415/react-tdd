@@ -24,7 +24,7 @@ export default class CommentBox extends Component {
         <textarea
           value={this.state.comment}
           onChange={this.handleChange.bind(this)} />
-        <button>Submit Content</button>
+        <button action="submit">Submit Content</button>
       </form>
     );
   }
