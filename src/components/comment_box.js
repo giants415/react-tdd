@@ -9,13 +9,16 @@ export default class CommentBox extends Component {
 
 
   handleChange(event) {
-
+    this.setState({ comment: event.target.value });
   }
 
   render() {
     return (
       <div className='comment-box'>
-        <textarea onChange={this.HandleChange.bind(this)} />
+        <textarea
+          value={this.sate.comment}
+          onChange={this.HandleChange.bind(this)}
+        />
         <button>Submit Content</button>
       </div>
     );
