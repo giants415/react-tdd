@@ -5,11 +5,13 @@ describe('CommentList', () => {
   let component;
 
   beforeEach(() => {
-    component = renderComponent(CommentList);
+    const props = { comments:['comment 1', 'comment 2'] };
+    component = renderComponent(CommentList, null, props);
   });
 
   it('shows an li for each comment', () => {
-
+    // find all comments on the list and i expect the list length to equal 2
+    expect(component.find('li').length).to.equal(2);
   });
 
   it('shows each comment that is provided', () => {
