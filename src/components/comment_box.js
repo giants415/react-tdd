@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as actions '../actions';
+import * as actions from '../actions/index';
 
 class CommentBox extends Component {
   constructor(props) {
