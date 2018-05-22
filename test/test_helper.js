@@ -1,4 +1,4 @@
-import jsom from 'jsdom';
+import jsdom from 'jsdom';
 import jquery from 'jquery';
 
 // set up testing env to run like a browser in the command line
