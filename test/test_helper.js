@@ -30,8 +30,9 @@ function renderComponent(ComponentClass, props, state) {
 
 
 // build helper for simulating events
-$.fn.simulate = function() {
+$.fn.simulate = function(eventName, value) {
 
+  this
 }
 
 
