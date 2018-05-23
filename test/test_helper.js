@@ -30,6 +30,9 @@ function renderComponent(ComponentClass, props, state) {
 
 
 // build helper for simulating events
+$.fn.simulate = function() {
+
+}
 
 
 //set up chai-jquery
