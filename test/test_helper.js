@@ -19,8 +19,8 @@ const $ = jquery(global.window);
 // build 'renderComponent' helper that should render a given react class
 function renderComponent(ComponentClass, props, state) {
   const componentInstance = TestUtils.renderIntoDocument(
-    <Provider store={createStore(reducers)}>
-      <ComponentClass />
+    <Provider store={createStore(reducers, state)}>
+      <ComponentClass {...props} />
     </Provider>
   );
 
