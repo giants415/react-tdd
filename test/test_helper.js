@@ -31,8 +31,8 @@ function renderComponent(ComponentClass, props, state) {
 
 // build helper for simulating events
 $.fn.simulate = function(eventName, value) {
-
-  this
+  // event name in [] creates a refernce to the event we want to simulate when it is chosen in the test spec file
+  TestUtils.Simulate[eventName](this[0]);
 }
 
 
