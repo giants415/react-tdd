@@ -5,7 +5,7 @@ import ReactDom from 'react-dom';
 import { expect } from 'chai';
 import React from 'react';
 import { Provider } from 'react-redux';
-import { Provider } from 'redux';
+import { createStore } from 'redux';
 import reducers from '../src/reducers';
 
 // set up testing env to run like a browser in the command line
