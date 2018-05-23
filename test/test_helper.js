@@ -2,6 +2,7 @@ import jsdom from 'jsdom';
 import jquery from 'jquery';
 import TestUtils from 'react-addons-test-utils';
 import ReactDom from 'react-dom';
+import { expect } from 'chai';
 
 // set up testing env to run like a browser in the command line
 
@@ -15,7 +16,7 @@ const $ = jquery(global.window);
 function renderComponent(ComponentClass) {
   const componentInstance = TestUtils.renderIntoDocument(<ComponentClass />);
 
-  //produces HTML so we can test in terminal and wraps it in jquery to gain access to testing from jquery chai 
+  //produces HTML so we can test in terminal and wraps it in jquery to gain access to testing from jquery chai
   return $(ReactDOM.findDOMNode(componentInstance));
 }
 
@@ -24,3 +25,6 @@ function renderComponent(ComponentClass) {
 
 
 //set up chai-jquery
+
+
+export { renderComponent, expect };
