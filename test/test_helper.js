@@ -15,8 +15,8 @@ const $ = jquery(global.window);
 function renderComponent(ComponentClass) {
   const componentInstance = TestUtils.renderIntoDocument(<ComponentClass />);
 
-  //produces HTML so we can test in terminal
-  ReactDOM.findDOMNode(componentInstance);
+  //produces HTML so we can test in terminal and wraps it in jquery to gain access to testing from jquery chai 
+  return $(ReactDOM.findDOMNode(componentInstance));
 }
 
 
