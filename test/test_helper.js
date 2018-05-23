@@ -18,7 +18,11 @@ const $ = jquery(global.window);
 
 // build 'renderComponent' helper that should render a given react class
 function renderComponent(ComponentClass) {
-  const componentInstance = TestUtils.renderIntoDocument(<ComponentClass />);
+  const componentInstance = TestUtils.renderIntoDocument(
+    <Provider store={createStore()}>
+      <ComponentClass />
+    </Provider>
+  );
 
   //produces HTML so we can test in terminal and wraps it in jquery to gain access to testing from jquery chai
   return $(ReactDOM.findDOMNode(componentInstance));
