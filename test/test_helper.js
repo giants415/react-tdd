@@ -1,7 +1,7 @@
 import jsdom from 'jsdom';
 import jquery from 'jquery';
-import TestUtils from 'react-addons-test-utils';
-import ReactDom from 'react-dom';
+import TestUtils from 'react-dom/test-utils';
+import ReactDOM from 'react-dom';
 import chai, { expect } from 'chai';
 import React from 'react';
 import { Provider } from 'react-redux';
